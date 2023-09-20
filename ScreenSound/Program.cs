@@ -1,7 +1,5 @@
-﻿Console.WriteLine("Teste");
+﻿int segundos = 350;
+int minutos = segundos / 60;
+int tempoSegundos = segundos % 60;
 
-int inteiro = 0;
-
-Console.WriteLine(inteiro);
-Console.WriteLine("Outro teste");
-Console.WriteLine("Calma lá que deu algum erro");
+Console.WriteLine($"{segundos} segundos são {minutos} minutos e {tempoSegundos} segundos");
