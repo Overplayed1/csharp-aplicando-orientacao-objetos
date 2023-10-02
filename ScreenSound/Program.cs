@@ -1,17 +1,19 @@
 ﻿Musica musica1 = new Musica();
 
-musica1.nome = "Freak on a Leash";
-musica1.artista = "KoRn";
-musica1.duracao = 280;
-musica1.disponivel = true;
-
-
+musica1.Nome = "Freak on a Leash";
+musica1.Artista = "KoRn";
+musica1.Duracao = 280;
+musica1.Disponivel = true;
+Console.WriteLine(musica1.DescricaoResumida);
 
 Musica musica2 = new Musica();
-musica2.nome = "Vertigo";
-musica2.artista = "U2";
-musica2.duracao = 367;
-musica2.disponivel = false;
+musica2.Nome = "Vertigo";
+musica2.Artista = "U2";
+musica2.Duracao = 367;
+musica2.Disponivel = false;
+Console.WriteLine(musica2.DescricaoResumida);
 
 musica1.ExibirFichaTecnica();
 musica2.ExibirFichaTecnica();
+//musica1.ExibirNomeEArtista();
+//musica2.ExibirNomeEArtista();

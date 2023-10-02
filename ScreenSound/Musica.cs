@@ -1,16 +1,19 @@
 ﻿class Musica
 {
-    public string nome;
-    public string artista;
-    public int duracao;
-    public bool disponivel;
+    public string Nome { get; set; }
+    public string Artista { get; set; }
+    public int Duracao { get; set; }
+    public bool Disponivel { get; set; }
+   /*Este => é utilizado em métodos que utilizam apenas leitura.*/ public string DescricaoResumida => 
+        $"A música {Nome} pertence a banda {Artista}";
+
 
     public void ExibirFichaTecnica()
     {
-        Console.WriteLine($"Nome: {nome}");
-        Console.WriteLine($"Artista: {artista}");
-        Console.WriteLine($"Duração: {duracao}");
-        if (disponivel) {
+        Console.WriteLine($"Nome: {Nome}");
+        Console.WriteLine($"Artista: {Artista}");
+        Console.WriteLine($"Duração: {Duracao}");
+        if (Disponivel) {
             Console.WriteLine("Disponível no plano.");
         } else
         {
@@ -20,6 +23,6 @@
 
     public void ExibirNomeEArtista()
     {
-        Console.WriteLine($"Nome/Artista: {nome} - {artista}");
+        Console.WriteLine($"Nome/Artista: {Nome} - {Artista}");
     }
 }
